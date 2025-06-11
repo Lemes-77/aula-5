@@ -1,45 +1,138 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Meu portfólio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio Lemes</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #1e2b1f;
+      color: #d4d4d4;
+    }
+
+    header {
+      background-color: #2f4f2f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 4px solid #556b2f;
+    }
+
+    header h1 {
+      color: #c0ffb3;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #c0ffb3;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #a3ff9f;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 4px solid #a3ff9f;
+      padding-left: 10px;
+    }
+
+    .projects .card {
+      background-color: #3a503a;
+      margin: 15px 0;
+      padding: 20px;
+      border-left: 5px solid #6b8e23;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #e0ffe0;
+    }
+
+    .contact a {
+      color: #90ee90;
+      display: block;
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #2f4f2f;
+      text-align: center;
+      padding: 15px;
+      color: #a9a9a9;
+      border-top: 4px solid #556b2f;
+    }
+  </style>
 </head>
-
 <body>
-    <header class="container text-center">
-        <img src="img/avatar-perfil.png" alt="avatar da Fernanda" class="rounded-circle" width="150" height="150" srcset="">
-        <p class="lead">Eu sou Gustavo_</p>
-        <h1>Eu vou me alitar </h1>
-        <p>Sou estudante e ja cursei informática!</p>
-        <p>Minhas habilidades</p>
-        <div>
-            <p class="badge bg-secondary">HTML</p>
-            <p class="badge bg-secondary">CSS</p>
-            <p class="badge bg-secondary">JavaScript</p>
-            <p class="badge bg-secondary">Scratch</p>
-        </div>
-    </header>
-    <main class="container">
-        <h2>Meus projetos</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
 
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <header>
+    <h1>Soldado Lemes</h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Início</h2>
+    <p>Bem-vindo ao meu quartel digital. Sou Lemes, um desenvolvedor pronto para qualquer missão no campo da tecnologia.</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou apaixonado por tecnologia, estratégia e eficiência. Minha formação e experiência me prepararam para enfrentar qualquer desafio em desenvolvimento web, mobile e sistemas. Opero com disciplina, foco e determinação.</p>
+  </section>
+
+  <section id="projetos" class="projects">
+    <h2>Projetos</h2>
+    <div class="card">
+      <h3>🛡️ Sistema de Monitoramento</h3>
+      <p>Um sistema para rastreamento de dados em tempo real, com alertas automáticos e painel tático de informações.</p>
+    </div>
+    <div class="card">
+      <h3>🎯 App de Treinamento</h3>
+      <p>Aplicativo que simula rotinas de treinamento com foco em performance e disciplina digital.</p>
+    </div>
+    <div class="card">
+      <h3>📡 Dashboard de Comunicação</h3>
+      <p>Painel web para facilitar a comunicação entre equipes em campo e centros de comando.</p>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <h2>Contato</h2>
+    <p>📧 Email: lemes@militar.dev</p>
+    <p>💼 LinkedIn: <a href="#">linkedin.com/in/lemes</a></p>
+    <p>📷 Instagram: <a href="#">@lemes.dev</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Lemes. Missão dada é missão cumprida.</p>
+  </footer>
+
 </body>
-
 </html>
